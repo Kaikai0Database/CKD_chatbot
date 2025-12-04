@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c9e33bf3-fa76-471b-955b-579f6758eeb1" name="CNwang">
+        <fileTransfer rootFolder="/home/cnwang" accessType="SFTP" host="10.250.80.84" port="22" sshConfigId="ef134b61-2b9f-4f49-9b85-4dd352f8099b" sshConfig="cnwang@10.250.80.84:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

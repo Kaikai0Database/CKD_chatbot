@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00796B;
+  --color-primary-light: #80CBC4;
+  --color-background: #FDFBF7;
+  --color-surface: #FFFFFF;
+  --color-text-primary: #212121;
+  --color-text-secondary: #757575;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #212121;
+  background-color: #FDFBF7;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-primary-light text-white px-4 py-2 rounded-lg font-medium hover:shadow-lg transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-100 text-gray-700 px-4 py-2 rounded-lg font-medium hover:bg-gray-200 transition-all duration-200;
+  }
+
+  .icon-btn {
+    @apply p-2 rounded-full hover:bg-gray-100 transition-colors cursor-pointer;
+  }
+
+  .chat-input {
+    @apply w-full px-4 py-3 border-2 border-primary-light rounded-lg focus:outline-none focus:border-primary;
+  }
+}
